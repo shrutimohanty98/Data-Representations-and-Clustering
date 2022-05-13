@@ -2,37 +2,12 @@
 
 Machine learning algorithms are used to analyze text and images, among other types of data. Before using these techniques, raw data must be converted into feature representations that may be used by downstream algorithms. We looked at feature extraction from text data and categorization as a downstream operation in the previous project. We have discovered that lowering the dimension of the retrieved characteristics might often aid a subsequent task.
 
-In this project, we explore the concepts of feature extraction and clustering together. In an
-ideal world, all we need are data points – encoded using certain features– and AI should be
-able to find what is important to learn, or more specifically, determine what are the underlying
-modes or categories in the dataset. This is the ultimate goal of General AI: the machine is
-able to bootstrap a knowledge base, acting as its own teacher and interacting with the outside
-world to explore to be able to operate autonomously in an environment.
+We combine the ideas of feature extraction and clustering in this research. In an ideal world, all we'd need are data points encoded with specified attributes, and AI would be able to figure out what's important to learn, or more precisely, what the dataset's underlying modes or categories are. The ultimate goal of General AI is for a machine to be able to build a knowledge base on its own, function as its own teacher, and interact with the outside world to learn and explore in order to be able to operate autonomously in a given environment.
 
-We first explore this field of unsupervised learning using textual data, which is a continuation
-of concepts learned in Project 1. We ask if a combination of feature engineering and clustering
-techniques can automatically separate a document set into groups that match known labels.
+We begin by looking at unsupervised learning using textual data, which is a continuation of what we studied in Project 1. We want to know if a mix of feature engineering and clustering techniques can automatically divide a document set into groups with labels that match.
 
-Next we focus on a new type of data, i.e. images. Specifically, we first explore how to
-use “deep learning” or “deep neural networks (DNNs)” to obtain image features. Large neural
-networks have been trained on huge labeled image datasets to recognize objects of different
-types from images. For example, networks trained on the Imagenet dataset can classify more
-than one thousand different categories of objects. Such networks can be viewed as comprising
-two parts: the first part maps a given RGB image into a feature vector using convolutional
-filters, and the second part then classifies this feature vector into an appropriate category, using
-a fully-connected multi-layered neural network (we will study such NNs in a later lecture). Such
-pre-trained networks could be considered as experienced agents that have learned to discover
-features that are salient for image understanding. 
+Next, we'll look at a different type of data: images. We first look at how to obtain image features using "deep learning" or "deep neural networks (DNNs)." Large neural networks have been trained to distinguish objects of various types from photos using large annotated image datasets. Networks trained on the Imagenet dataset, for example, can categorize over a thousand different object categories.The first half of such networks uses convolutional filters to convert a given RGB image into a feature vector, and the second portion uses a fully-connected multi-layered neural network to classify this feature vector into an appropriate category (we will study such NNs in a later lecture). Such pre-trained networks could be thought of as experienced agents who have learned to recognize important elements in images.
 
-Can one use the experience of such pretrained agents in understanding new images that the machine has never seen before? It is akin
-to asking a human expert on forensics to explore a new crime scene. One would expect such
-an expert to be able to transfer their domain knowledge into a new scenario. In a similar
-vein, can a pre-trained network for image understanding be used for transfer learning? One
-could use the output of the network in the last few layers as expert features. Then, given a
-multi-modal dataset –consisting of images from categories that the DNN was not trained for–
-one can use feature engineering (such as dimensionality reduction) and clustering algorithms
-to automatically extract unlabeled categories from such expert features.
+Is it possible to leverage such pre-trained agents' experience to understand new images that the machine has never seen before? It's like asking a human forensics expert to investigate a new murder scene. An expert in this field should be able to transfer their domain knowledge to a new situation. Can a pre-trained network for image interpretation be utilized for transfer learning in a similar way? The output of the network in the last few layers could be used as expert features. Then, given a multi-modal dataset containing images from categories for which the DNN was not trained, feature engineering (such as dimensionality reduction) and clustering methods can be used to extract unlabeled categories from expert features.
 
-For both the text and image data, one can use a common set of multiple evaluation metrics
-to compare the groups extracted by the unsupervised learning algorithms to the corresponding
-ground truth human labels.
+To compare the groups recovered by the unsupervised learning algorithms to the equivalent ground truth human labels, one can utilize a standard set of multiple assessment criteria for both text and image data.
