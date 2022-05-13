@@ -11,3 +11,5 @@ Next, we'll look at a different type of data: images. We first look at how to ob
 Is it possible to leverage such pre-trained agents' experience to understand new images that the machine has never seen before? It's like asking a human forensics expert to investigate a new murder scene. An expert in this field should be able to transfer their domain knowledge to a new situation. Can a pre-trained network for image interpretation be utilized for transfer learning in a similar way? The output of the network in the last few layers could be used as expert features. Then, given a multi-modal dataset containing images from categories for which the DNN was not trained, feature engineering (such as dimensionality reduction) and clustering methods can be used to extract unlabeled categories from expert features.
 
 To compare the groups recovered by the unsupervised learning algorithms to the equivalent ground truth human labels, one can utilize a standard set of multiple assessment criteria for both text and image data.
+
+This project is a part of Winter 2022 Course - Large Scale Data Mining (ECE 219)
