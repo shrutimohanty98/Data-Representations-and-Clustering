@@ -1,10 +1,6 @@
 # Data Representations and Clustering
 
-Machine learning algorithms are applied to a wide variety of data, including text and images.
-Before applying these algorithms, one needs to convert the raw data into feature representations
-that are suitable for downstream algorithms. In the previous project, we studied feature extraction
-from text data, and the downstream task of classification. We also learned that reducing the
-dimension of the extracted features often helps with a downstream task.
+Machine learning algorithms are used to analyze text and images, among other types of data. Before using these techniques, raw data must be converted into feature representations that may be used by downstream algorithms. We looked at feature extraction from text data and categorization as a downstream operation in the previous project. We have discovered that lowering the dimension of the retrieved characteristics might often aid a subsequent task.
 
 In this project, we explore the concepts of feature extraction and clustering together. In an
 ideal world, all we need are data points – encoded using certain features– and AI should be
